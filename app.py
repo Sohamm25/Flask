@@ -3,7 +3,7 @@ app = Flask(__name__)
 items = []
 @app.route("/", methods=["GET", "POST"])
 def index():
-    if request.method == "POST":
+    if request.method == "POST": 
         item = request.form.get("item")
         if item:
             items.append(item)
